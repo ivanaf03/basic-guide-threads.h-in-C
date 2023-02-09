@@ -14,4 +14,6 @@ El orden de los documentos es el siguiente:
 
 5. loopThread.c
 
-6.returnValueThread.c
+6. returnValueThread.c
+
+7. passingArgs.c
