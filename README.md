@@ -7,3 +7,7 @@ El orden de los documentos es el siguiente:
 1. introduction.c
 
 2. processVSthreads.c && threadsVSprocess.c
+
+3. raceConditions.c
+
+4. mutexInC.c
