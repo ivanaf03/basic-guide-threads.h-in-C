@@ -6,4 +6,4 @@ El orden de los documentos es el siguiente:
 
 1. introduction.c
 
-2.
+2. processVSthreads.c && threadsVSprocess.c
