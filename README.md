@@ -4,4 +4,6 @@ En Concurrencia y Paralelismo se usa threads.h, pero el funcionamiento de la lib
 
 El orden de los documentos es el siguiente:
 
-1. 
+1.introduction.c 
+
+2.
