@@ -2,7 +2,7 @@
 #include <threads.h>
 
 int run(void* args){ //Función a ejecutar
-int* a=args;
+    int* a=args;
     printf("El hilo está ejecutandose con el argumento %i\n", *a);
     (*a)++;
     return (*a);
@@ -32,4 +32,5 @@ int main(){
 //para crear varios hilos. Pero nada mas lejos de la realidad. Esto que está 
 //pasando si ejecutamos el código es por las Race Conditions. El thread principal 
 //modifica i antes de que los thread hagan las copias. De ahí que se den resultados
-//inesperados.
+//inesperados. Para solucionar esto podemos tener una variable por thread o crearla
+//con un malloc que se libere en cada thread.

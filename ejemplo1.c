@@ -2,7 +2,7 @@
 #include <threads.h>
 
 int run(void* args){ //Función a ejecutar
-int* a=args;
+    int* a=args;
     printf("El hilo está ejecutandose con el argumento %i\n", *a);
     (*a)++;
     return (*a);
