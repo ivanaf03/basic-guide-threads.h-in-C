@@ -12,7 +12,7 @@ int main(){
 
     thrd_t t; //ID del thread
     int i=1; //Variable del thread
-    int result; //Solución
+    int result; //Recogedor del argumento de la función
 
     thrd_create(&t, run, &i);
     thrd_join(t, &result);
