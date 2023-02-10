@@ -12,22 +12,20 @@ int run(void* args){ //Función a ejecutar
 
 int main(){
 
-    thrd_t t[10]; //ID del thread
-    int result[10]; //Recogedor del argumento de la función
+    thrd_t t[100]; //ID del thread
+    int result[100]; //Recogedor del argumento de la función
 
-    for(int i=0;i<10;i++){
+    for(int i=0;i<100;i++){
         int *arg= malloc(sizeof *arg);
         *arg=i;
         thrd_create(t+i, run, arg);
     }
 
-    for(int i=0;i<10;i++){
+    for(int i=0;i<100;i++){
         thrd_join(t[i], &result[i]);
-    }
-
-    for(int i=0;i<10;i++){
         printf("El resultado es %i\n", result[i]);
     }
+
 
     return 0;
 }
